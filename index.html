@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVM Bricks | Premium Brick Manufacturing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brick: {
+                            50: '#fdf8f6',
+                            100: '#f2e8e5',
+                            500: '#d9534f', // Base terracotta
+                            600: '#c13a36', // Hover terracotta
+                            800: '#8f2926', // Dark brick
+                            900: '#691e1c', // Very dark earthy red
+                        },
+                        earth: {
+                            100: '#f5f0eb',
+                            800: '#4a3f35',
+                            900: '#332b24',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(105, 30, 28, 0.85), rgba(51, 43, 36, 0.9)), url('https://placehold.co/1920x1080/691e1c/ffffff?text=Quality+Bricks+Manufacturing');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Custom message box for form submission */
+        #success-msg { display: none; }
+    </style>
+</head>
+<body class="bg-earth-100 text-earth-900 antialiased relative">
+
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0 border-b-4 border-brick-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center gap-2">
+                        <i class="fa-solid fa-cubes-stacked text-brick-600 text-3xl"></i>
+                        <span class="font-bold text-3xl text-earth-900 tracking-tight">VVM <span class="text-brick-600">Bricks</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-earth-800 hover:text-brick-600 font-semibold transition-colors">Home</a>
+                    <a href="#about" class="text-earth-800 hover:text-brick-600 font-semibold transition-colors">About Us</a>
+                    <a href="#services" class="text-earth-800 hover:text-brick-600 font-semibold transition-colors">Services</a>
+                    <a href="#contact" class="text-earth-800 hover:text-brick-600 font-semibold transition-colors">Contact</a>
+                    <a href="https://wa.me/919585601457" target="_blank" class="bg-[#25D366] text-white px-6 py-2 rounded-md font-bold hover:bg-green-600 transition-colors shadow-md flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> WhatsApp
+                    </a>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <a href="https://wa.me/919585601457" target="_blank" class="text-[#25D366] mr-4 text-3xl"><i class="fa-brands fa-whatsapp"></i></a>
+                    <button id="mobile-menu-btn" class="text-earth-800 hover:text-brick-600 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-brick-100 pb-4 shadow-inner">
+            <a href="#home" class="block px-4 py-3 text-base font-medium text-earth-800 hover:bg-brick-50 hover:text-brick-600">Home</a>
+            <a href="#about" class="block px-4 py-3 text-base font-medium text-earth-800 hover:bg-brick-50 hover:text-brick-600">About Us</a>
+            <a href="#services" class="block px-4 py-3 text-base font-medium text-earth-800 hover:bg-brick-50 hover:text-brick-600">Services</a>
+            <a href="#contact" class="block px-4 py-3 text-base font-medium text-earth-800 hover:bg-brick-50">Contact Us</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-bg pt-32 pb-20 md:pt-48 md:pb-32 text-white min-h-[80vh] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 w-full">
+            <span class="text-brick-100 font-bold tracking-widest uppercase text-sm mb-4 block drop-shadow-md">Strength In Every Block</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 drop-shadow-lg">
+                Premium Quality Bricks<br />For Lasting Structures
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light">
+                VVM Bricks is a leading manufacturer of high-grade red bricks, wire-cut bricks, and construction materials, delivering unmatched durability for your dream projects.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:9585601457" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3 text-lg border-2 border-green-500">
+                    <i class="fa-solid fa-phone-volume animate-pulse text-xl"></i> Call Now: 9585601457
+                </a>
+                <a href="#services" class="bg-transparent border-2 border-white hover:bg-white hover:text-brick-900 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center">
+                    View Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-brick-100 rounded-tl-3xl z-0"></div>
+                    <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-earth-100 rounded-br-3xl z-0"></div>
+                    <img src="https://placehold.co/800x600/c13a36/ffffff?text=Brick+Kiln+Manufacturing" alt="Brick Manufacturing" class="rounded-xl shadow-2xl w-full object-cover relative z-10 border-4 border-white">
+                </div>
+                <div class="lg:w-1/2">
+                    <div class="inline-flex items-center gap-2 mb-4">
+                        <span class="w-12 h-1 bg-brick-600 rounded-full"></span>
+                        <h4 class="text-brick-600 font-bold uppercase tracking-wider text-sm">About VVM Bricks</h4>
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-bold text-earth-900 mb-6">Building The Foundation Of Tomorrow</h2>
+                    <p class="text-earth-800 text-lg mb-6 leading-relaxed">
+                        At <span class="font-bold text-brick-800">VVM</span>, we pride ourselves on being a trusted name in the brick manufacturing industry. Using state-of-the-art kiln technologies combined with traditional clay molding expertise, we produce bricks that withstand the test of time.
+                    </p>
+                    <p class="text-earth-800 text-lg mb-8 leading-relaxed">
+                        Whether you are constructing a residential home, a commercial complex, or executing large-scale infrastructure projects, VVM Bricks guarantees consistent size, supreme compressive strength, and perfect earthy aesthetics.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-brick-50 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-award text-brick-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-earth-900">Premium Quality</h5>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-brick-50 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-truck-fast text-brick-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h5 class="font-bold text-earth-900">On-Time Delivery</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-earth-100 border-t border-earth-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 mb-4 justify-center w-full">
+                    <span class="w-12 h-1 bg-brick-600 rounded-full"></span>
+                    <h4 class="text-brick-600 font-bold uppercase tracking-wider text-sm">Our Products</h4>
+                    <span class="w-12 h-1 bg-brick-600 rounded-full"></span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-earth-900 mb-4">Superior Construction Materials</h2>
+                <p class="text-earth-800 text-lg">We offer a variety of brick types to suit different architectural needs and structural load requirements.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-brick-50 hover:shadow-2xl transition-all duration-300 group transform hover:-translate-y-2">
+                    <div class="h-48 bg-brick-800 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/8f2926/ffffff?text=Standard+Red+Bricks" class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-500" alt="Red Bricks">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-earth-900 mb-3">Standard Red Bricks</h3>
+                        <p class="text-earth-800 leading-relaxed mb-6">
+                            High compressive strength traditional clay bricks baked at optimal temperatures. Ideal for load-bearing walls and general construction.
+                        </p>
+                        <a href="tel:9585601457" class="text-brick-600 font-bold hover:text-brick-800 inline-flex items-center gap-2">
+                            Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-brick-50 hover:shadow-2xl transition-all duration-300 group transform hover:-translate-y-2">
+                    <div class="h-48 bg-brick-900 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/691e1c/ffffff?text=Wire+Cut+Bricks" class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-500" alt="Wire Cut Bricks">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-earth-900 mb-3">Wire Cut Bricks</h3>
+                        <p class="text-earth-800 leading-relaxed mb-6">
+                            Machine-molded, uniformly sized bricks offering a smooth finish. Perfect for exposed brickwork and aesthetic architectural elevations.
+                        </p>
+                        <a href="tel:9585601457" class="text-brick-600 font-bold hover:text-brick-800 inline-flex items-center gap-2">
+                            Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-brick-50 hover:shadow-2xl transition-all duration-300 group transform hover:-translate-y-2">
+                    <div class="h-48 bg-gray-700 relative overflow-hidden">
+                        <img src="https://placehold.co/600x400/4a5568/ffffff?text=Solid+Concrete+Blocks" class="w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-500" alt="Concrete Blocks">
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-earth-900 mb-3">Solid Concrete Blocks</h3>
+                        <p class="text-earth-800 leading-relaxed mb-6">
+                            Heavy-duty concrete blocks designed for foundational strength, compound walls, and rapid construction framing.
+                        </p>
+                        <a href="tel:9585601457" class="text-brick-600 font-bold hover:text-brick-800 inline-flex items-center gap-2">
+                            Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-0 bg-white rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(105,30,28,0.1)] border border-brick-100">
+                
+                <!-- Contact Info Panel -->
+                <div class="lg:w-2/5 p-10 md:p-14 bg-brick-900 text-white relative overflow-hidden">
+                    <!-- Background pattern -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-brick-600 rounded-full mix-blend-multiply filter blur-3xl opacity-50 -translate-y-1/2 translate-x-1/3"></div>
+                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-earth-900 rounded-full mix-blend-multiply filter blur-3xl opacity-50 translate-y-1/3 -translate-x-1/3"></div>
+                    
+                    <div class="relative z-10">
+                        <h3 class="text-3xl md:text-4xl font-bold mb-4">Contact Sales</h3>
+                        <p class="text-brick-100 mb-12 text-lg font-light">Get in touch with us for bulk orders, pricing queries, and site deliveries.</p>
+                        
+                        <div class="space-y-8">
+                            <a href="tel:9585601457" class="flex items-center group block">
+                                <div class="w-14 h-14 bg-brick-800 rounded-full flex items-center justify-center mr-6 group-hover:bg-white group-hover:text-brick-900 transition-colors duration-300">
+                                    <i class="fa-solid fa-phone text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-brick-100 text-sm uppercase tracking-wider mb-1">Call Us Directly</h4>
+                                    <p class="text-2xl font-bold">9585601457</p>
+                                </div>
+                            </a>
+                            
+                            <a href="mailto:ashokkumar.designer11@gmail.com" class="flex items-center group block">
+                                <div class="w-14 h-14 bg-brick-800 rounded-full flex items-center justify-center mr-6 group-hover:bg-white group-hover:text-brick-900 transition-colors duration-300">
+                                    <i class="fa-solid fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-brick-100 text-sm uppercase tracking-wider mb-1">Email Address</h4>
+                                    <p class="text-lg font-medium break-all">ashokkumar.designer11<br>@gmail.com</p>
+                                </div>
+                            </a>
+
+                            <div class="flex items-center">
+                                <div class="w-14 h-14 bg-brick-800 rounded-full flex items-center justify-center mr-6">
+                                    <i class="fa-solid fa-location-dot text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-brick-100 text-sm uppercase tracking-wider mb-1">Location</h4>
+                                    <p class="text-lg font-medium">Tamil Nadu, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:w-3/5 p-10 md:p-14 bg-white relative">
+                    <h3 class="text-3xl font-bold text-earth-900 mb-8">Send Us A Message</h3>
+                    
+                    <!-- Success Message Box (Hidden by default) -->
+                    <div id="success-msg" class="mb-6 bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg flex items-center gap-3">
+                        <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
+                        <span>Thank you! Your inquiry has been sent. We will contact you shortly.</span>
+                    </div>
+
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-bold text-earth-800 mb-2">Full Name</label>
+                                <input type="text" id="name" class="w-full px-5 py-4 bg-earth-100/50 rounded-xl border border-transparent focus:bg-white focus:border-brick-500 focus:ring-2 focus:ring-brick-200 outline-none transition-all" placeholder="Your Name" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-bold text-earth-800 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-5 py-4 bg-earth-100/50 rounded-xl border border-transparent focus:bg-white focus:border-brick-500 focus:ring-2 focus:ring-brick-200 outline-none transition-all" placeholder="Mobile Number" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="requirement" class="block text-sm font-bold text-earth-800 mb-2">Requirement Details</label>
+                            <textarea id="requirement" rows="4" class="w-full px-5 py-4 bg-earth-100/50 rounded-xl border border-transparent focus:bg-white focus:border-brick-500 focus:ring-2 focus:ring-brick-200 outline-none transition-all resize-none" placeholder="Quantity needed, delivery location, etc." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brick-600 hover:bg-brick-800 text-white font-bold py-4 rounded-xl transition-colors shadow-lg text-lg flex justify-center items-center gap-2">
+                            Request Quote <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-earth-900 text-earth-100 py-12 border-t border-earth-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="flex items-center gap-2 mb-2">
+                        <i class="fa-solid fa-cubes-stacked text-brick-500 text-2xl"></i>
+                        <span class="font-bold text-2xl text-white tracking-tight">VVM <span class="text-brick-500">Bricks</span></span>
+                    </a>
+                    <p class="text-sm text-gray-400">Premium Bricks for Solid Foundations.</p>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-400">&copy; 2026 VVM Bricks. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button for Calling -->
+    <a href="tel:9585601457" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(34,197,94,0.5)] hover:bg-green-600 hover:scale-110 transition-all duration-300 z-50 animate-bounce cursor-pointer group">
+        <i class="fa-solid fa-phone text-2xl group-hover:animate-pulse"></i>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Form submission handler (Replaces alert with inline message)
+        const form = document.getElementById('contact-form');
+        const successMsg = document.getElementById('success-msg');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent page reload
+            successMsg.style.display = 'flex'; // Show message box
+            form.reset(); // Clear form fields
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                successMsg.style.display = 'none';
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
